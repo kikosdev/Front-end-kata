@@ -21,16 +21,99 @@ button
     text-transform: uppercase
 .hero-partners
   margin-top: -50px
-  .shadow-hero-partners
+  overflow: hidden
+  &::after
+    content: ''
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F5F5F5 69.79%)
     position: absolute
     bottom: 0px
     left: 0
     right: 0
     width: 100%
-    height: 120px
+    height: 90px
     background-position: bottom
-    background-size: 100% 120px
+    background-size: 100% 90px
+    z-index: -1
+
+  .dash-top-left
+    position: absolute
+    width: 24px
+    height: 2px
+    top: 72px
+    left: 88px
+    transform: rotate(180 deg)
+    background: #6AD300
+
+
+  .dash-bottom-left
+    position: absolute
+    width: 24px
+    height: 2px
+    top: 662.28px
+    left: 62px
+    transform: rotate(-90deg)
+    background: #6AD300
+
+
+  .dash-bottom-right
+    position: absolute
+    background: #6AD300
+    width: 38.87px
+    height: 2px
+    top: 662.28px
+    right: 47.48px
+    transform: rotate(-135deg)
+
+
+  .image-hero
+    .logo-icc
+      position: absolute
+      display: flex 
+      justify-content: center
+      align-items: center
+      width: 200px
+      height: 200px
+      margin: auto
+      width: 483px
+      height: 483px
+      top: 42px
+      left: 94px
+      background: #FFFFFF
+      border-radius: 100%
+      box-shadow: 0px 0px 128px 0px #0000001A
+      overflow: hidden
+      img
+        width: 323.94px
+        height: 165.19px
+
+    .logo-jus
+      position: absolute
+      display: flex 
+      justify-content: center
+      align-items: center
+      width: 187.13px
+      height: 187.13px
+      top: 488.03px
+      left: 147.5px
+      border-radius: 100%
+      background: rgba(255,255,255,0.15)
+      box-shadow: 0px 0px 192px 0px #0000001A
+
+      img
+        width: 107.65px
+        height: 38.75px
+    
+    .gif-case
+      position: absolute
+      width: 478.98px
+      height: 496.31px
+      top: 235.49px
+      left: 156.02px
+      z-index: -1
+      border-radius: 100%
+      overflow: hidden
+
+
   .hero-title
     font-family: "Larken Bold Italic"
     font-size: 56px
@@ -59,7 +142,6 @@ button
     font-family: Larken Italic
     font-size: 16px
     font-style: italic
-    font-weight: 400
     line-height: 32px
     text-align: justified
     position: relative
@@ -145,11 +227,79 @@ button
 
 
 .newsfeed
-  height: 100vh
   background: #F4F6F8
 
+  .read-more
+    font-family: Lato
+    font-size: 14px
+    font-weight: 700
+    line-height: 16.8px
+    letter-spacing: 2px
+    text-align: left
+    color: #2C2B2E
+    text-decoration: underline
+
+
+  .title-newsfeed
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    line-height: 16.8px
+    letter-spacing: 2px
+    text-align: center
+    color: #2C2B2E
+
+  .primary-title-newsfeed
+    font-family: Larken Italic
+    font-size: 32px
+    line-height: 40px
+    letter-spacing: -0.5px
+    text-align: center
+    color: #2C2B2E
+
+  .newsfeed-carousel
+    .newsfeed-item
+      min-height: 150px
+      height: 100%
+      border-radius: 8px
+
+      .newsfeed-description
+        font-family: IBM Plex Sans
+        font-size: 16px
+        font-weight: 700
+        line-height: 24px
+        text-align: left
+        color: #3D8CBC
+
+
+
+
+.trusted-partners
+  .trusted-title
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    line-height: 16.8px
+    letter-spacing: 2px
+    text-align: center
+    margin-bottom: 65px
+    color: #818487
 
 
 
 
 
+
+
+.read-more
+  font-family: Lato
+  font-size: 12px
+  font-weight: 400
+  line-height: 16px
+  letter-spacing: 2px
+  text-align: center
+  color: #2C2B2E
+  text-decoration: underline
+
+  &.uppercase
+    text-transform: uppercase

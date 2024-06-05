@@ -45,7 +45,7 @@ export default defineComponent({
         Note to the Parties and the Arbitral Tribunals on the Conduct of Arbitration under the ICC
         Rules of Arbitration
       </p>
-      <p class="read-more">read the whole document</p>
+      <p class="read-more uppercase">read the whole document</p>
     </div>
     <div class="flex flex-wrap justify-center px-10 py-20 why-partner">
       <h1 class="title-why-partner mb-5">Why this partnership?</h1>

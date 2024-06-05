@@ -1,11 +1,21 @@
-<script setup lang="ts">
+<script lang="ts">
+import { defineComponent } from 'vue'
+import CarouselComponent from '@/components/base/carousel/CarouselComponent.vue'
+
+export default defineComponent({
+  components: {
+    CarouselComponent
+  }
+})
 </script>
 
 <template>
   <div class="newsfeed">
-    <div class="">
-      <h2>newsfeed</h2>
-      <h1>ICC International Court of Arbitration News & Links</h1>
+    <div class="container pt-20 px-4 py-10 mx-auto text-center">
+      <h1 class="title-newsfeed mb-5">newsfeed</h1>
+      <h2 class="primary-title-newsfeed">ICC International Court of Arbitration News & Links</h2>
+      <CarouselComponent class="mb-10" />
+      <a class="read-more uppercase">read all news</a>
     </div>
   </div>
 </template>

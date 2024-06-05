@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './layout/index.sass'
+import 'vue3-carousel/dist/carousel.css'
 
 const app = createApp(App)
 
