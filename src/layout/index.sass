@@ -7,7 +7,7 @@ button
   &.btn-try
     box-shadow: 0px 8px 32px 0px #254F6D3D
     background: #FFFFFF
-    padding: 16px 16px 16px 46px
+    padding: 16px 16px 16px 16px
     gap: 16px
     font-family: Lato
     font-size: 14px
@@ -16,9 +16,14 @@ button
     letter-spacing: 2px
     text-align: left
     color: #2C2B2E
+    display: flex
 
   &.uppercase
     text-transform: uppercase
+
+  .icon
+    margin-right: 5px
+
 .hero-partners
   margin-top: -50px
   overflow: hidden
@@ -136,6 +141,13 @@ button
     opacity: 0px
     background: #009EFE
     box-shadow: 0px 8px 32px 0px #254F6D3D
+    display: flex
+
+    &.uppercase
+      text-transform: uppercase
+
+    .icon
+      margin-right: 5px
 
 .whyPartners
   .quotes
@@ -196,6 +208,24 @@ button
       letter-spacing: -1px
       text-align: center
       color: #2C2B2E
+      position: relative
+      width: 100%
+      &::before
+        content: ''
+        position: absolute
+        width: 24px
+        height: 2px
+        top: 35px
+        left: 2px
+        background: #6AD300
+      &::after
+        content: ''
+        position: absolute
+        width: 24px
+        height: 2px
+        top: 35px
+        right: 2px
+        background: #6AD300
     
     .partners-text
       font-family: IBM Plex Sans
