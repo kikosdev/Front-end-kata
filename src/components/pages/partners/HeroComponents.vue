@@ -3,7 +3,6 @@
 <template>
   <div
     class="hero-partners container px-4 py-10 mx-auto lg:h-135 lg:space-x-8 lg:flex lg:items-center"
-    style="min-height: 100vh"
   >
     <div class="dash-top-left"></div>
     <div class="dash-bottom-left"></div>
